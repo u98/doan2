@@ -34,7 +34,7 @@ namespace DO_AN2
             if (dr.HasRows && dr.Read())
             {
                 MessageBox.Show("Đăng nhập thành công, bấm OK để tiếp tục", "Thông báo");
-                //new AdminDashboard(dr[0].ToString()).Show();
+                new AdminDashboard(dr[0].ToString()).Show();
                 this.Hide();
                 dr.Close();
                 sql.DongKetNoi();
@@ -44,6 +44,11 @@ namespace DO_AN2
                 MessageBox.Show("Đăng nhập thất bại, vui lòng kiểm tra lại!", "Thông báo");
                 sql.DongKetNoi();
             }
+        }
+
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

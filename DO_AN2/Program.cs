@@ -15,7 +15,7 @@ namespace DO_AN2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminDashboard());
+            Application.Run(new BanHang());
         }
     }
 }

@@ -13,15 +13,17 @@ namespace DO_AN2
     public partial class AdminDashboard : Form
     {
         string idUser = "NV01";
-        /*public AdminDashboard(string idUser)
+        public AdminDashboard(string idUser)
         {
             InitializeComponent();
             this.idUser = idUser;
-        }*/
+        }
+        /*
         public AdminDashboard()
         {
             InitializeComponent();
-        }
+        }*/
+
         SqlServer sql = new SqlServer();
 
         private void AdminDashboard_FormClosing(object sender, FormClosingEventArgs e)
@@ -50,6 +52,18 @@ namespace DO_AN2
         private void AdminDashboard_Load(object sender, EventArgs e)
         {
             LoadDataNhanVien();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            new LoginForm().Show();
+            this.Hide();
+        }
+
+        private void btnBanHang_Click(object sender, EventArgs e)
+        {
+            new BanHang().Show();
+            this.Hide();
         }
     }
 }

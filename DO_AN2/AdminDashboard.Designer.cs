@@ -35,10 +35,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnHangHoa = new System.Windows.Forms.Button();
+            this.btnHoaDon = new System.Windows.Forms.Button();
+            this.btnKhachHang = new System.Windows.Forms.Button();
+            this.btnBanHang = new System.Windows.Forms.Button();
+            this.btnLoaiHang = new System.Windows.Forms.Button();
+            this.btnNCC = new System.Windows.Forms.Button();
+            this.btnNhanVien = new System.Windows.Forms.Button();
+            this.btnDoiMK = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +54,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.labelName);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 89);
+            this.groupBox1.Location = new System.Drawing.Point(12, 75);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(276, 142);
             this.groupBox1.TabIndex = 0;
@@ -110,58 +115,110 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(342, 89);
+            this.groupBox2.Controls.Add(this.btnNhanVien);
+            this.groupBox2.Controls.Add(this.btnLoaiHang);
+            this.groupBox2.Controls.Add(this.btnNCC);
+            this.groupBox2.Controls.Add(this.btnHangHoa);
+            this.groupBox2.Controls.Add(this.btnHoaDon);
+            this.groupBox2.Controls.Add(this.btnKhachHang);
+            this.groupBox2.Controls.Add(this.btnBanHang);
+            this.groupBox2.Location = new System.Drawing.Point(342, 75);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(307, 215);
+            this.groupBox2.Size = new System.Drawing.Size(234, 171);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
             // 
-            // button1
+            // btnHangHoa
             // 
-            this.button1.Location = new System.Drawing.Point(25, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Bán hàng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHangHoa.Location = new System.Drawing.Point(123, 55);
+            this.btnHangHoa.Name = "btnHangHoa";
+            this.btnHangHoa.Size = new System.Drawing.Size(75, 23);
+            this.btnHangHoa.TabIndex = 3;
+            this.btnHangHoa.Text = "Hàng hóa";
+            this.btnHangHoa.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnHoaDon
             // 
-            this.button2.Location = new System.Drawing.Point(123, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Khách hàng";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHoaDon.Location = new System.Drawing.Point(25, 55);
+            this.btnHoaDon.Name = "btnHoaDon";
+            this.btnHoaDon.Size = new System.Drawing.Size(75, 23);
+            this.btnHoaDon.TabIndex = 2;
+            this.btnHoaDon.Text = "Hóa đơn";
+            this.btnHoaDon.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnKhachHang
             // 
-            this.button3.Location = new System.Drawing.Point(123, 55);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Khách hàng";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnKhachHang.Location = new System.Drawing.Point(123, 26);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(75, 23);
+            this.btnKhachHang.TabIndex = 1;
+            this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnBanHang
             // 
-            this.button4.Location = new System.Drawing.Point(25, 55);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Bán hàng";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnBanHang.Location = new System.Drawing.Point(25, 26);
+            this.btnBanHang.Name = "btnBanHang";
+            this.btnBanHang.Size = new System.Drawing.Size(75, 23);
+            this.btnBanHang.TabIndex = 0;
+            this.btnBanHang.Text = "Bán hàng";
+            this.btnBanHang.UseVisualStyleBackColor = true;
+            this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
+            // 
+            // btnLoaiHang
+            // 
+            this.btnLoaiHang.Location = new System.Drawing.Point(123, 84);
+            this.btnLoaiHang.Name = "btnLoaiHang";
+            this.btnLoaiHang.Size = new System.Drawing.Size(75, 23);
+            this.btnLoaiHang.TabIndex = 5;
+            this.btnLoaiHang.Text = "Loại hàng";
+            this.btnLoaiHang.UseVisualStyleBackColor = true;
+            // 
+            // btnNCC
+            // 
+            this.btnNCC.Location = new System.Drawing.Point(25, 84);
+            this.btnNCC.Name = "btnNCC";
+            this.btnNCC.Size = new System.Drawing.Size(75, 23);
+            this.btnNCC.TabIndex = 4;
+            this.btnNCC.Text = "NCC";
+            this.btnNCC.UseVisualStyleBackColor = true;
+            // 
+            // btnNhanVien
+            // 
+            this.btnNhanVien.Location = new System.Drawing.Point(25, 113);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.Size = new System.Drawing.Size(75, 23);
+            this.btnNhanVien.TabIndex = 6;
+            this.btnNhanVien.Text = "Nhân viên";
+            this.btnNhanVien.UseVisualStyleBackColor = true;
+            // 
+            // btnDoiMK
+            // 
+            this.btnDoiMK.Location = new System.Drawing.Point(12, 223);
+            this.btnDoiMK.Name = "btnDoiMK";
+            this.btnDoiMK.Size = new System.Drawing.Size(105, 23);
+            this.btnDoiMK.TabIndex = 13;
+            this.btnDoiMK.Text = "Đổi mật khẩu";
+            this.btnDoiMK.UseVisualStyleBackColor = true;
+            // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.Location = new System.Drawing.Point(183, 223);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(105, 23);
+            this.btnDangXuat.TabIndex = 14;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 316);
+            this.ClientSize = new System.Drawing.Size(605, 265);
+            this.Controls.Add(this.btnDangXuat);
+            this.Controls.Add(this.btnDoiMK);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
@@ -187,9 +244,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnHangHoa;
+        private System.Windows.Forms.Button btnHoaDon;
+        private System.Windows.Forms.Button btnKhachHang;
+        private System.Windows.Forms.Button btnBanHang;
+        private System.Windows.Forms.Button btnNhanVien;
+        private System.Windows.Forms.Button btnLoaiHang;
+        private System.Windows.Forms.Button btnNCC;
+        private System.Windows.Forms.Button btnDoiMK;
+        private System.Windows.Forms.Button btnDangXuat;
     }
 }
