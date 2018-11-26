@@ -1,0 +1,10 @@
+D:\DEV\CSHAPE\DO_AN2\DO_AN2\bin\Debug\DO_AN2.exe
+D:\DEV\CSHAPE\DO_AN2\DO_AN2\bin\Debug\DO_AN2.pdb
+D:\DEV\CSHAPE\DO_AN2\DO_AN2\obj\Debug\DO_AN2.csprojAssemblyReference.cache
+D:\DEV\CSHAPE\DO_AN2\DO_AN2\obj\Debug\DO_AN2.LoginForm.resources
+D:\DEV\CSHAPE\DO_AN2\DO_AN2\obj\Debug\DO_AN2.Properties.Resources.resources
+D:\DEV\CSHAPE\DO_AN2\DO_AN2\obj\Debug\DO_AN2.csproj.GenerateResource.cache
+D:\DEV\CSHAPE\DO_AN2\DO_AN2\obj\Debug\DO_AN2.csproj.CoreCompileInputs.cache
+D:\DEV\CSHAPE\DO_AN2\DO_AN2\obj\Debug\DO_AN2.exe
+D:\DEV\CSHAPE\DO_AN2\DO_AN2\obj\Debug\DO_AN2.pdb
+D:\DEV\CSHAPE\DO_AN2\DO_AN2\obj\Debug\DO_AN2.AdminDashboard.resources
