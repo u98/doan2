@@ -22,7 +22,7 @@ namespace DO_AN2
 
         public void LoadDataSanPham(string name)
         {
-            string query = String.Format("select MA_MAT_HANG, TEN_MAT_HANG, DON_GIA, MA_NCC AS SO_LUONG from MAT_HANG where MA_MAT_HANG like N'%{0}%' or TEN_MAT_HANG like N'%{1}%'", name, name);
+            string query = String.Format("select  MAT_HANG.MA_MAT_HANG, MAT_HANG.TEN_MAT_HANG, MAT_HANG.DON_GIA , CT_HOA_DON.SO_LUONG from MAT_HANG, CT_HOA_DON where MAT_HANG.MA_MAT_HANG like N'%{0}%' or MAT_HANG.TEN_MAT_HANG like N'%{1}%' and MAT_HANG.MA_MAT_HANG = CT_HOA_DON.MA_MAT_HANG", name, name);
             SqlDataAdapter da = new SqlDataAdapter(query, sql.conn);
             dt = new DataTable();
             da.Fill(dt);
