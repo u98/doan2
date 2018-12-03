@@ -19,3 +19,6 @@ D:\DEV\CSharp\DO_AN2\DO_AN2\obj\Debug\DO_AN2.csproj.CoreCompileInputs.cache
 D:\DEV\CSharp\DO_AN2\DO_AN2\obj\Debug\DO_AN2.exe
 D:\DEV\CSharp\DO_AN2\DO_AN2\obj\Debug\DO_AN2.pdb
 D:\DEV\CSharp\DO_AN2\DO_AN2\obj\Debug\DO_AN2.BanHang.resources
+D:\DEV\CSharp\DO_AN2\DO_AN2\obj\Debug\DO_AN2.KhachHang.resources
+D:\DEV\CSharp\DO_AN2\DO_AN2\obj\Debug\DO_AN2.HoaDon.resources
+D:\DEV\CSharp\DO_AN2\DO_AN2\obj\Debug\DO_AN2.childHoaDon.resources

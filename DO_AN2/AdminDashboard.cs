@@ -12,17 +12,12 @@ namespace DO_AN2
 {
     public partial class AdminDashboard : Form
     {
-        string idUser = "NV01";
-        public AdminDashboard(string idUser)
+        string idUser;
+        public AdminDashboard(string name)
         {
             InitializeComponent();
-            this.idUser = idUser;
+            this.idUser = name;
         }
-        /*
-        public AdminDashboard()
-        {
-            InitializeComponent();
-        }*/
 
         SqlServer sql = new SqlServer();
 
@@ -34,7 +29,7 @@ namespace DO_AN2
         public void LoadDataNhanVien()
         {
             sql.MoKetNoi();
-            string query = String.Format("select * from NHAN_VIEN where MA_NHAN_VIEN = '{0}'", idUser);
+            string query = String.Format("select * from NHAN_VIEN where MA_NHAN_VIEN = '{0}'", this.idUser);
             SqlCommand cmd = new SqlCommand(query, sql.conn);
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.HasRows && dr.Read())
@@ -62,7 +57,13 @@ namespace DO_AN2
 
         private void btnBanHang_Click(object sender, EventArgs e)
         {
-            new BanHang().Show();
+            new BanHang(this.idUser).Show();
+            this.Hide();
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            new KhachHang(this.idUser).Show();
             this.Hide();
         }
     }

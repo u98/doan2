@@ -35,13 +35,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnNhanVien = new System.Windows.Forms.Button();
+            this.btnLoaiHang = new System.Windows.Forms.Button();
+            this.btnNCC = new System.Windows.Forms.Button();
             this.btnHangHoa = new System.Windows.Forms.Button();
             this.btnHoaDon = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnBanHang = new System.Windows.Forms.Button();
-            this.btnLoaiHang = new System.Windows.Forms.Button();
-            this.btnNCC = new System.Windows.Forms.Button();
-            this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnDoiMK = new System.Windows.Forms.Button();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -129,6 +129,33 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
             // 
+            // btnNhanVien
+            // 
+            this.btnNhanVien.Location = new System.Drawing.Point(25, 113);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.Size = new System.Drawing.Size(75, 23);
+            this.btnNhanVien.TabIndex = 6;
+            this.btnNhanVien.Text = "Nhân viên";
+            this.btnNhanVien.UseVisualStyleBackColor = true;
+            // 
+            // btnLoaiHang
+            // 
+            this.btnLoaiHang.Location = new System.Drawing.Point(123, 84);
+            this.btnLoaiHang.Name = "btnLoaiHang";
+            this.btnLoaiHang.Size = new System.Drawing.Size(75, 23);
+            this.btnLoaiHang.TabIndex = 5;
+            this.btnLoaiHang.Text = "Loại hàng";
+            this.btnLoaiHang.UseVisualStyleBackColor = true;
+            // 
+            // btnNCC
+            // 
+            this.btnNCC.Location = new System.Drawing.Point(25, 84);
+            this.btnNCC.Name = "btnNCC";
+            this.btnNCC.Size = new System.Drawing.Size(75, 23);
+            this.btnNCC.TabIndex = 4;
+            this.btnNCC.Text = "NCC";
+            this.btnNCC.UseVisualStyleBackColor = true;
+            // 
             // btnHangHoa
             // 
             this.btnHangHoa.Location = new System.Drawing.Point(123, 55);
@@ -155,6 +182,7 @@
             this.btnKhachHang.TabIndex = 1;
             this.btnKhachHang.Text = "Khách hàng";
             this.btnKhachHang.UseVisualStyleBackColor = true;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnBanHang
             // 
@@ -165,33 +193,6 @@
             this.btnBanHang.Text = "Bán hàng";
             this.btnBanHang.UseVisualStyleBackColor = true;
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
-            // 
-            // btnLoaiHang
-            // 
-            this.btnLoaiHang.Location = new System.Drawing.Point(123, 84);
-            this.btnLoaiHang.Name = "btnLoaiHang";
-            this.btnLoaiHang.Size = new System.Drawing.Size(75, 23);
-            this.btnLoaiHang.TabIndex = 5;
-            this.btnLoaiHang.Text = "Loại hàng";
-            this.btnLoaiHang.UseVisualStyleBackColor = true;
-            // 
-            // btnNCC
-            // 
-            this.btnNCC.Location = new System.Drawing.Point(25, 84);
-            this.btnNCC.Name = "btnNCC";
-            this.btnNCC.Size = new System.Drawing.Size(75, 23);
-            this.btnNCC.TabIndex = 4;
-            this.btnNCC.Text = "NCC";
-            this.btnNCC.UseVisualStyleBackColor = true;
-            // 
-            // btnNhanVien
-            // 
-            this.btnNhanVien.Location = new System.Drawing.Point(25, 113);
-            this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.Size = new System.Drawing.Size(75, 23);
-            this.btnNhanVien.TabIndex = 6;
-            this.btnNhanVien.Text = "Nhân viên";
-            this.btnNhanVien.UseVisualStyleBackColor = true;
             // 
             // btnDoiMK
             // 
