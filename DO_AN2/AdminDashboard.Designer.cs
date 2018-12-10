@@ -42,7 +42,6 @@
             this.btnHoaDon = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnBanHang = new System.Windows.Forms.Button();
-            this.btnDoiMK = new System.Windows.Forms.Button();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -137,6 +136,7 @@
             this.btnNhanVien.TabIndex = 6;
             this.btnNhanVien.Text = "Nhân viên";
             this.btnNhanVien.UseVisualStyleBackColor = true;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
             // 
             // btnLoaiHang
             // 
@@ -146,6 +146,7 @@
             this.btnLoaiHang.TabIndex = 5;
             this.btnLoaiHang.Text = "Loại hàng";
             this.btnLoaiHang.UseVisualStyleBackColor = true;
+            this.btnLoaiHang.Click += new System.EventHandler(this.btnLoaiHang_Click);
             // 
             // btnNCC
             // 
@@ -155,6 +156,7 @@
             this.btnNCC.TabIndex = 4;
             this.btnNCC.Text = "NCC";
             this.btnNCC.UseVisualStyleBackColor = true;
+            this.btnNCC.Click += new System.EventHandler(this.btnNCC_Click);
             // 
             // btnHangHoa
             // 
@@ -164,6 +166,7 @@
             this.btnHangHoa.TabIndex = 3;
             this.btnHangHoa.Text = "Hàng hóa";
             this.btnHangHoa.UseVisualStyleBackColor = true;
+            this.btnHangHoa.Click += new System.EventHandler(this.btnHangHoa_Click);
             // 
             // btnHoaDon
             // 
@@ -173,6 +176,7 @@
             this.btnHoaDon.TabIndex = 2;
             this.btnHoaDon.Text = "Hóa đơn";
             this.btnHoaDon.UseVisualStyleBackColor = true;
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // btnKhachHang
             // 
@@ -194,15 +198,6 @@
             this.btnBanHang.UseVisualStyleBackColor = true;
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
-            // btnDoiMK
-            // 
-            this.btnDoiMK.Location = new System.Drawing.Point(12, 223);
-            this.btnDoiMK.Name = "btnDoiMK";
-            this.btnDoiMK.Size = new System.Drawing.Size(105, 23);
-            this.btnDoiMK.TabIndex = 13;
-            this.btnDoiMK.Text = "Đổi mật khẩu";
-            this.btnDoiMK.UseVisualStyleBackColor = true;
-            // 
             // btnDangXuat
             // 
             this.btnDangXuat.Location = new System.Drawing.Point(183, 223);
@@ -219,10 +214,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(605, 265);
             this.Controls.Add(this.btnDangXuat);
-            this.Controls.Add(this.btnDoiMK);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "AdminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trung tâm điều khiển";
@@ -252,7 +247,6 @@
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Button btnLoaiHang;
         private System.Windows.Forms.Button btnNCC;
-        private System.Windows.Forms.Button btnDoiMK;
         private System.Windows.Forms.Button btnDangXuat;
     }
 }

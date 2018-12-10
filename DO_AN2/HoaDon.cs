@@ -12,10 +12,11 @@ namespace DO_AN2
 {
     public partial class HoaDon : Form
     {
-        string MaNV = "NV01";
-        public HoaDon()
+        string MaNV;
+        public HoaDon(string name)
         {
             InitializeComponent();
+            this.MaNV = name;
         }
         SqlServer sql = new SqlServer();
 
@@ -36,10 +37,31 @@ namespace DO_AN2
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            sql.MoKetNoi();
             int line = dataGridView1.CurrentRow.Index;
             string mahd = dataGridView1.Rows[line].Cells[0].Value.ToString();
-            new childHoaDon(mahd, MaNV).Show();
+            string query = String.Format("delete from HOA_DON where MA_HOA_DON = '{0}'", mahd);
+            SqlCommand cmd = new SqlCommand(query, sql.conn);
+            cmd.ExecuteNonQuery();
+            loadHoaDonXuat();
+        }
 
+        private void HoaDon_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            new AdminDashboard(this.MaNV).Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int line = dataGridView1.CurrentRow.Index;
+            string mahd = dataGridView1.Rows[line].Cells[0].Value.ToString();
+            new childHoaDon(mahd).Show();
         }
     }
 }

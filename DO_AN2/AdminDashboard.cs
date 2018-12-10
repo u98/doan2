@@ -66,5 +66,35 @@ namespace DO_AN2
             new KhachHang(this.idUser).Show();
             this.Hide();
         }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            new HoaDon(this.idUser).Show();
+            this.Hide();
+        }
+
+        private void btnNCC_Click(object sender, EventArgs e)
+        {
+            new NhaCungCap(this.idUser).Show();
+            this.Hide();
+        }
+
+        private void btnLoaiHang_Click(object sender, EventArgs e)
+        {
+            new LoaiHang(this.idUser).Show();
+            this.Hide();
+        }
+
+        private void btnHangHoa_Click(object sender, EventArgs e)
+        {
+            new HangHoa(this.idUser).Show();
+            this.Hide();
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            new FormNhanVien(this.idUser).Show();
+            this.Hide();
+        }
     }
 }
