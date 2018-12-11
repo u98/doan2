@@ -9,16 +9,16 @@ using System.Windows.Forms;
 
 namespace DO_AN2
 {
-    public partial class FRPMatHang : Form
+    public partial class FRPHoaDon : Form
     {
         string idUser;
-        public FRPMatHang(string name)
+        public FRPHoaDon(string name)
         {
             InitializeComponent();
             this.idUser = name;
         }
 
-        private void FRPMatHang_FormClosing(object sender, FormClosingEventArgs e)
+        private void FRPHoaDon_FormClosing(object sender, FormClosingEventArgs e)
         {
             new AdminDashboard(this.idUser).Show();
             this.Hide();

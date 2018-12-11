@@ -1,6 +1,6 @@
 ﻿namespace DO_AN2
 {
-    partial class FRPMatHang
+    partial class FRPHoaDon
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.RPMatHang1 = new DO_AN2.RPMatHang();
+            this.RPHoaDon1 = new DO_AN2.RPHoaDon();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -40,23 +40,20 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.RPMatHang1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1001, 538);
+            this.crystalReportViewer1.ReportSource = this.RPHoaDon1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
-            // FRPMatHang
+            // FRPHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 538);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crystalReportViewer1);
-            this.MaximizeBox = false;
-            this.Name = "FRPMatHang";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Báo cáo mặt hàng";
+            this.Name = "FRPHoaDon";
+            this.Text = "FRPHoaDon";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FRPMatHang_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FRPHoaDon_FormClosing);
             this.ResumeLayout(false);
 
         }
@@ -64,6 +61,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private RPMatHang RPMatHang1;
+        private RPHoaDon RPHoaDon1;
     }
 }

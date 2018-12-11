@@ -44,9 +44,28 @@ namespace DO_AN2
             sql.DongKetNoi();
         }
 
+        private void checkPermission()
+        {
+            sql.MoKetNoi();
+            string query = String.Format("select CHUC_VU from NHAN_VIEN where MA_NHAN_VIEN = '{0}'", this.idUser);
+            SqlCommand cmd = new SqlCommand(query, sql.conn);
+            string permission = cmd.ExecuteScalar().ToString();
+            if (permission == "sale")
+            {
+                btnHangHoa.Visible = false;
+                btnHoaDon.Visible = false;
+                btnNCC.Visible = false;
+                btnLoaiHang.Visible = false;
+                btnNhanVien.Visible = false;
+                btnRPHD.Visible = false;
+                btnRPHH.Visible = false;
+            }
+        }
+
         private void AdminDashboard_Load(object sender, EventArgs e)
         {
             LoadDataNhanVien();
+            checkPermission();
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
@@ -94,6 +113,18 @@ namespace DO_AN2
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
             new FormNhanVien(this.idUser).Show();
+            this.Hide();
+        }
+
+        private void btnRPHH_Click(object sender, EventArgs e)
+        {
+            new FRPMatHang(this.idUser).Show();
+            this.Hide();
+        }
+
+        private void btnRPHD_Click(object sender, EventArgs e)
+        {
+            new FRPHoaDon(this.idUser).Show();
             this.Hide();
         }
     }

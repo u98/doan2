@@ -47,3 +47,4 @@ D:\DEV\CSharp\DO_AN2\DO_AN2\bin\Debug\FlashControlV71.dll
 D:\DEV\CSharp\DO_AN2\DO_AN2\bin\Debug\ShockwaveFlashObjects.dll
 D:\DEV\CSharp\DO_AN2\DO_AN2\obj\Debug\DO_AN2.FRPMatHang.resources
 D:\DEV\CSharp\DO_AN2\DO_AN2\obj\Debug\DO_AN2.FormNhanVien.resources
+D:\DEV\CSharp\DO_AN2\DO_AN2\obj\Debug\DO_AN2.FRPHoaDon.resources

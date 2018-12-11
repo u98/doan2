@@ -43,6 +43,8 @@
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnBanHang = new System.Windows.Forms.Button();
             this.btnDangXuat = new System.Windows.Forms.Button();
+            this.btnRPHH = new System.Windows.Forms.Button();
+            this.btnRPHD = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -114,6 +116,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnRPHD);
+            this.groupBox2.Controls.Add(this.btnRPHH);
             this.groupBox2.Controls.Add(this.btnNhanVien);
             this.groupBox2.Controls.Add(this.btnLoaiHang);
             this.groupBox2.Controls.Add(this.btnNCC);
@@ -123,14 +127,14 @@
             this.groupBox2.Controls.Add(this.btnBanHang);
             this.groupBox2.Location = new System.Drawing.Point(342, 75);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(234, 171);
+            this.groupBox2.Size = new System.Drawing.Size(321, 171);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
             // 
             // btnNhanVien
             // 
-            this.btnNhanVien.Location = new System.Drawing.Point(25, 113);
+            this.btnNhanVien.Location = new System.Drawing.Point(222, 26);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(75, 23);
             this.btnNhanVien.TabIndex = 6;
@@ -140,7 +144,7 @@
             // 
             // btnLoaiHang
             // 
-            this.btnLoaiHang.Location = new System.Drawing.Point(123, 84);
+            this.btnLoaiHang.Location = new System.Drawing.Point(25, 84);
             this.btnLoaiHang.Name = "btnLoaiHang";
             this.btnLoaiHang.Size = new System.Drawing.Size(75, 23);
             this.btnLoaiHang.TabIndex = 5;
@@ -150,7 +154,7 @@
             // 
             // btnNCC
             // 
-            this.btnNCC.Location = new System.Drawing.Point(25, 84);
+            this.btnNCC.Location = new System.Drawing.Point(222, 55);
             this.btnNCC.Name = "btnNCC";
             this.btnNCC.Size = new System.Drawing.Size(75, 23);
             this.btnNCC.TabIndex = 4;
@@ -208,11 +212,31 @@
             this.btnDangXuat.UseVisualStyleBackColor = true;
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
+            // btnRPHH
+            // 
+            this.btnRPHH.Location = new System.Drawing.Point(123, 84);
+            this.btnRPHH.Name = "btnRPHH";
+            this.btnRPHH.Size = new System.Drawing.Size(174, 23);
+            this.btnRPHH.TabIndex = 7;
+            this.btnRPHH.Text = "Báo cáo hàng hóa";
+            this.btnRPHH.UseVisualStyleBackColor = true;
+            this.btnRPHH.Click += new System.EventHandler(this.btnRPHH_Click);
+            // 
+            // btnRPHD
+            // 
+            this.btnRPHD.Location = new System.Drawing.Point(25, 113);
+            this.btnRPHD.Name = "btnRPHD";
+            this.btnRPHD.Size = new System.Drawing.Size(174, 23);
+            this.btnRPHD.TabIndex = 8;
+            this.btnRPHD.Text = "Báo cáo hóa đơn";
+            this.btnRPHD.UseVisualStyleBackColor = true;
+            this.btnRPHD.Click += new System.EventHandler(this.btnRPHD_Click);
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 265);
+            this.ClientSize = new System.Drawing.Size(671, 265);
             this.Controls.Add(this.btnDangXuat);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label3);
@@ -248,5 +272,7 @@
         private System.Windows.Forms.Button btnLoaiHang;
         private System.Windows.Forms.Button btnNCC;
         private System.Windows.Forms.Button btnDangXuat;
+        private System.Windows.Forms.Button btnRPHD;
+        private System.Windows.Forms.Button btnRPHH;
     }
 }
